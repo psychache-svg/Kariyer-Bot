@@ -1,2 +1,0 @@
-# Kariyer-Bot
-Kariyer Bot
