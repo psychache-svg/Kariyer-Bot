@@ -1,8 +1,0 @@
-﻿streamlit
-pandas
-numpy
-plotlypython-doten
-vjinja2
-markdown
-reportlab
-requests
