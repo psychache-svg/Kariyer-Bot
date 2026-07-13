@@ -1,0 +1,9 @@
+﻿streamlit
+pandas
+numpy
+plotly
+python-doten
+vjinja2
+markdown
+reportlab
+requests
