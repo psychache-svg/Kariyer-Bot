@@ -22,17 +22,17 @@ LIKERT_OPTIONS = {
 def load_items(path=ITEMS_PATH):
 try:
 return pd.read_csv(path)
-except FileNotFoundError:
-st.error(f"items.csv bulunamadı: {path}")
-return pd.DataFrame()
-@st.cache_data
-def load_career_clusters(path=CAREER_CLUSTERS_PATH):
+    except FileNotFoundError:
+    st.error(f"items.csv bulunamadı: {path}")
+    return pd.DataFrame()
+    @st.cache_data
+    def load_career_clusters(path=CAREER_CLUSTERS_PATH):
 try:
-return load_json(path)
-except FileNotFoundError:
-st.error(f"career_clusters.json bulunamadı: {path}")
-return {"clusters": []}
-def init_session_state():
+    return load_json(path)
+    except FileNotFoundError:
+    st.error(f"career_clusters.json bulunamadı: {path}")
+    return {"clusters": []}
+    def init_session_state():
 defaults = {
 "step": "welcome",
 "responses": {},
